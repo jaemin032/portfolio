@@ -1,0 +1,143 @@
+/*
+base styles
+*/
+* {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+img {
+  width: 90%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  margin-left : 20px;
+}
+.container .portfolio-element {
+  text-align:center;
+  margin: auto;
+  padding: 10px;
+}
+* {
+  margin: auto;
+}
+/*
+header styles
+*/
+
+header {
+  font-weight: bold;
+}
+
+#profile-picture {
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+
+.introduction-paragraph {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  margin: 20px auto;
+}
+
+nav ul {
+  padding:0px;
+  width: 80%;
+}
+
+nav ul li{
+  width : 300px;
+  height: 30px;
+  padding: 10px;
+  margin : 5px auto;
+  border : 1px solid #B0B0B0;
+}
+
+
+/*
+body style
+*/
+.portfolio-element {
+  width: 300px;
+}
+
+.portfolio-element h3 {
+  margin: 20px;
+}
+
+.contacts {
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/*
+media queries
+*/
+@media (min-width: 768px) {
+  .portfolio-elements {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+  nav ul li {
+    padding : 5px;
+    border: none;
+    margin: 0px;
+    display: inline;
+  }
+
+  .nav-grid {
+    display: flex;
+
+  }
+  .nav-grid ul {
+    width: 300px;
+  }
+
+  .intro {
+    display: flex;
+  }
+  .intro img {
+    order: 1;
+    width: 40%;
+  }
+  .intro p {
+    width: 50%;
+    margin: 10px;
+    margin-left: 30px;
+  }
+
+
+}
+
+
+@media (min-width: 1024px) {
+  .portfolio-elements {
+    grid-template-columns: auto auto auto;
+  }
+
+  .intro p {
+    width: 480px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  .intro {
+    width : 800px;
+  }
+}
